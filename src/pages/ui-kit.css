@@ -1,0 +1,10 @@
+input[type="email"] {
+    width: 320px;
+    height: 44px;
+    margin-top: 163px;
+    margin-left: 141px;
+    border-radius: 4px 0 0 0;
+    border: 1px solid rgba(31, 32, 65, 0.25); /* Цвет границы с прозрачностью */
+    background-color: #FFFFFF; /* Цвет фона */
+    box-sizing: border-box; /* Учитывает границы и отступы в ширине/высоте */  
+}
