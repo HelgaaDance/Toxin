@@ -1,0 +1,31 @@
+.widget-title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--dark-shade-5);
+}
+
+.item-title {
+    font-family: Montserrat;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 23.16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+    color: var(--dark-shade-5);
+}
+
+.label {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14.63px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+    color: var(--dark-shade-5);
+}

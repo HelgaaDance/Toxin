@@ -1,5 +1,4 @@
-@import url("../componets/input/input.css");
-html {
+@import url(input.css);html {
     --dark-shade-5: #1F204140;
 }
 

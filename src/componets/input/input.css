@@ -1,0 +1,8 @@
+.input {
+    width: 100%;
+    height: 44px;
+    border-radius: 4px 0 0 0;
+    border: 1px solid var(--dark-shade-5); /* Цвет границы с прозрачностью */
+    background-color: #FFFFFF; /* Цвет фона */
+    box-sizing: border-box; /* Учитывает границы и отступы в ширине/высоте */  
+}

@@ -1,3 +1,5 @@
+include ../componets/input/input
+include ../componets/headline/headline
 doctype html
 html(lang="ru")
   head
@@ -6,4 +8,21 @@ html(lang="ru")
     title UI Kit
     link(rel="stylesheet", href="ui-kit.css")
   body
-    input(type="email", name="userEmail", placeholder="Email", required)
+    main(class="main")
+      div.column
+        +input('email')
+        +input('text')
+        +input('olya')
+        select(name="guests", id="guests")
+          option(disabled, selected) Сколько гостей
+          option(value="1") 1 гость
+          option(value="2") 2 гостя
+          option(value="3") 3 гостя
+          option(value="4") 4 гостя
+          option(value="5") 5 гостей
+          option(value="more") 6 и более
+      div.column 
+        +h1('This is the main widget title')
+        +h2('This is an item title')
+        +h3('This is a label')
+      div.column
