@@ -1,6 +1,7 @@
 include ../componets/input/input
 include ../componets/headline/headline
 include ../componets/radio-buttons/radio-buttons
+include ../componets/dropdown/dropdown
 doctype html
 html(lang="ru")
   head
@@ -13,14 +14,7 @@ html(lang="ru")
       div.column
         +input('email')
         +input('text')
-        select(name="guests", id="guests")
-          option(disabled, selected) Сколько гостей
-          option(value="1") 1 гость
-          option(value="2") 2 гостя
-          option(value="3") 3 гостя
-          option(value="4") 4 гостя
-          option(value="5") 5 гостей
-          option(value="more") 6 и более
+        +guestsDropdown('guests', 'guests')
       div.column 
         +h1('This is the main widget title')
         +h2('This is an item title')

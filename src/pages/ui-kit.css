@@ -1,10 +1,13 @@
 @import url("../componets/input/input.css");
 @import url("../componets/headline/headline.css");
 @import url("../componets/radio-buttons/radio-buttons.css");
+@import url("../componets/dropdown/dropdown.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 html {
-    --dark-shade-5: #1F204140;
+    --dark-shade-5: #1F204180;
     --dark-shade-1: #1F2041;
+    --dark-shade-2: #1F204140;
     --dark-shade-7: #1F2041BF;
     --purple: #BC9CFF;
 }

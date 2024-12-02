@@ -1,0 +1,10 @@
+mixin guestsDropdown(name, id)
+  .select-container
+    select(name=name, id=id)
+      option(disabled, selected) Сколько гостей
+      option(value="1") 1 гость
+      option(value="2") 2 гостя
+      option(value="3") 3 гостя
+      option(value="4") 4 гостя
+      option(value="5") 5 гостей
+      option(value="more") 6 и более
