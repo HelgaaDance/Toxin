@@ -1,0 +1,22 @@
+/* Радио-контейнер для расположения в строку */
+.radio-container {
+    display: flex;       /* Горизонтальное размещение */
+    gap: 20px;           /* Расстояние между элементами */
+    align-items: center; /* Вертикальное выравнивание */
+}
+
+/* Стили для радио-кнопок и текста */
+.radio-label {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--dark-shade-1); /* Цвет текста */
+}
+
+/* Отступ между радио-кнопкой и текстом */
+.radio-label input[type="radio"] {
+    margin-right: 8px;
+    accent-color: var(--purple);
+  }

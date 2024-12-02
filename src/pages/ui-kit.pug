@@ -1,5 +1,6 @@
 include ../componets/input/input
 include ../componets/headline/headline
+include ../componets/radio-buttons/radio-buttons
 doctype html
 html(lang="ru")
   head
@@ -12,7 +13,6 @@ html(lang="ru")
       div.column
         +input('email')
         +input('text')
-        +input('olya')
         select(name="guests", id="guests")
           option(disabled, selected) Сколько гостей
           option(value="1") 1 гость
@@ -25,4 +25,9 @@ html(lang="ru")
         +h1('This is the main widget title')
         +h2('This is an item title')
         +h3('This is a label')
+        +body('This is the body text which is used for most of the design, like paragraphs, lists, etc.')
+        form
+          .radio-container
+            +radioButton('gender', 'male', 'Мужчина')
+            +radioButton('gender', 'female', 'Женщина')
       div.column

@@ -1,6 +1,8 @@
-@import url(input.css);@import url(headline.css);@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);html {
+@import url(input.css);@import url(headline.css);@import url(radio-buttons.css);@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);html {
     --dark-shade-5: #1F204140;
     --dark-shade-1: #1F2041;
+    --dark-shade-7: #1F2041BF;
+    --purple: #BC9CFF;
 }
 
 .main {
