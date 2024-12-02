@@ -1,8 +1,8 @@
 /* Радио-контейнер для расположения в строку */
 .radio-container {
-    display: flex;       /* Горизонтальное размещение */
-    gap: 20px;           /* Расстояние между элементами */
-    align-items: center; /* Вертикальное выравнивание */
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 /* Стили для радио-кнопок и текста */
@@ -12,11 +12,22 @@
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 24px;
-    color: var(--dark-shade-1); /* Цвет текста */
+    color: var(--dark-shade-5); /* Цвет текста по умолчанию */
+    cursor: pointer;
 }
 
 /* Отступ между радио-кнопкой и текстом */
 .radio-label input[type="radio"] {
     margin-right: 8px;
-    accent-color: var(--purple);
-  }
+    accent-color: var(--purple); /* Цвет радиокнопки */
+}
+
+/* Внутренний кружок при выборе радио-кнопки */
+input[type="radio"]:checked + .radio-label {
+    color: var(--dark-shade-7); /* Цвет текста выбранного элемента */
+}
+
+input[type="radio"]:checked + .radio-label::before {
+    background-color: var(--purple); /* Цвет фона при выборе */
+    border-color: var(--purple);    /* Цвет границы при выборе */
+}
