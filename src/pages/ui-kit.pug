@@ -2,6 +2,7 @@ include ../componets/input/input
 include ../componets/headline/headline
 include ../componets/radio-buttons/radio-buttons
 include ../componets/dropdown/dropdown
+include ../componets/toggle-button/toggle-button
 doctype html
 html(lang="ru")
   head
@@ -24,4 +25,5 @@ html(lang="ru")
           .radio-container
             +radioButton('gender', 'male', 'Мужчина')
             +radioButton('gender', 'female', 'Женщина')
+        +toggleButton('offers1', 'toggle1', 'Получать спецпредложения')
       div.column

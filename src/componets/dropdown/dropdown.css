@@ -1,30 +1,36 @@
 /* Стили для выпадающего списка */
 select {
-    width: 320px;
-    height: 44px;
-    border: 1px solid var(--dark-shade-5); /* Убедись, что переменная указана правильно */
-    border-radius: 4px;
-    padding: 8px;
-    appearance: none; /* Скрываем стандартную стрелку браузера */
+    width: 320px; /* Ширина выпадающего списка */
+    height: 44px; /* Высота выпадающего списка */
+    border: 1px solid var(--dark-shade-7); /* Граница выпадающего списка с цветом --dark-shade-7 */
+    border-radius: 4px; /* Скругление углов */
+    padding: 8px; /* Внутренний отступ */
+    appearance: none; /* Скрывает стандартную стрелку браузера */
     -webkit-appearance: none; /* Для Safari и старых версий Chrome */
     -moz-appearance: none; /* Для Firefox */
-    background-color: white; /* Фон, чтобы не перекрывался */
+    background-color: white; /* Цвет фона списка */
+    color: var(--dark-shade-7); /* Цвет текста внутри select */
 }
 
 /* Стили для контейнера, содержащего select, чтобы добавить стрелку */
 .select-container {
-    position: relative;
-    width: 320px;
+    position: relative; /* Позиционирование для размещения стрелки */
+    width: 320px; /* Ширина контейнера соответствует select */
 }
 
 /* Стили для стрелочки */
 .select-container::after {
     content: '\e5c5'; /* Иконка стрелки вниз из Material Icons */
-    font-family: 'Material Icons';
-    font-size: 24px;
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    pointer-events: none; /* Чтобы стрелка не мешала клику по select */
-    color: var(--dark-shade-7);
+    font-family: 'Material Icons'; /* Шрифт для отображения иконки */
+    font-size: 24px; /* Размер стрелки */
+    position: absolute; /* Абсолютное позиционирование внутри контейнера */
+    top: 10px; /* Отступ сверху для выравнивания */
+    right: 12px; /* Отступ справа для размещения стрелки */
+    pointer-events: none; /* Стрелка не мешает клику по select */
+    color: var(--dark-shade-7); /* Цвет стрелки */
+}
+
+/* Стили для опций выпадающего списка */
+option {
+    color: var(--dark-shade-7); /* Цвет текста каждой опции */
 }

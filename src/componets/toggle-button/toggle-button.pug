@@ -1,0 +1,6 @@
+mixin toggleButton(name, id, label)
+  .toggle-container
+    input(type="checkbox", id=id, name=name, class="toggle-input")
+    label(for=id, class="toggle-label")
+      .toggle-switch
+      | #{label}
