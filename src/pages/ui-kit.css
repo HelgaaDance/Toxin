@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("../componets/toggle-button/toggle-button.css");
+@import url("../componets/checkbox-buttons/checkbox-buttons.css");
 html {
     --dark-shade-5: #1F204180;
     --dark-shade-1: #1F2041;

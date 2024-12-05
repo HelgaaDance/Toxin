@@ -3,6 +3,7 @@ include ../componets/headline/headline
 include ../componets/radio-buttons/radio-buttons
 include ../componets/dropdown/dropdown
 include ../componets/toggle-button/toggle-button
+include ../componets/checkbox-buttons/checkbox-buttons
 doctype html
 html(lang="ru")
   head
@@ -26,4 +27,7 @@ html(lang="ru")
             +radioButton('gender', 'male', 'Мужчина')
             +radioButton('gender', 'female', 'Женщина')
         +toggleButton('offers1', 'toggle1', 'Получать спецпредложения')
+        +checkbox('Можно курить', 'smoking') 
+        +checkbox('Можно с питомцами', 'pets') 
+        +checkbox('Можно пригласить гостей (до 10 человек)', 'guest')
       div.column
