@@ -1,57 +1,51 @@
-/* Общие стили для чекбоксов */
 .custom-checkbox {
-    display: none; /* скрываем стандартный чекбокс */
-  }
-  
-  /* Оформление контейнера чекбокса */
-  .checkbox-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  /* Оформление метки */
-  .checkbox-wrapper label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: left;
-    color: var(--dark-shade-1);
-    cursor: pointer;
-    position: relative;
-    padding-left: 30px;
-  }
-  
-  /* Создание пользовательского чекбокса */
-  .checkbox-wrapper label::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    border: 1px solid var(--dark-shade-1);
-    border-radius: 4px;
-    background-color: white;
-    transition: background-color 0.3s, border-color 0.3s;
-  }
-  
-  /* Галочка при выборе чекбокса */
-  .custom-checkbox:checked + label::before {
-    background-color: var(--purple);
-    border-color: var(--purple);
-  }
-  
-  /* Анимация галочки */
-  .custom-checkbox:checked + label::after {
-    content: '';
-    position: absolute;
-    left: 6px;
-    top: 9px;
-    width: 6px;
-    height: 12px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-  }
+  display: none;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-wrapper label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 20px; /* Совпадает с высотой чекбокса */
+  text-align: left;
+  color: var(--dark-shade-1);
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--dark-shade-1);
+  border-radius: 4px;
+  background-color: white;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-checkbox:checked + label::before {
+  background-color: var(--purple);
+  border-color: var(--purple);
+}
+
+.custom-checkbox:checked + label::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 50%; /* Центрирование */
+  transform: translateY(-50%) rotate(45deg);
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+}
