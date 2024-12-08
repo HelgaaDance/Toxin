@@ -4,6 +4,7 @@ include ../componets/radio-buttons/radio-buttons
 include ../componets/dropdown/dropdown
 include ../componets/toggle-button/toggle-button
 include ../componets/checkbox-buttons/checkbox-buttons
+include ../componets/date-dropdown/date-dropdown
 doctype html
 html(lang="ru")
   head
@@ -17,6 +18,8 @@ html(lang="ru")
         +input('email')
         +input('text')
         +guestsDropdown('guests', 'guests')
+        +dateDropdown('')
+        script(src="main.js", defer)
       div.column 
         +h1('This is the main widget title')
         +h2('This is an item title')

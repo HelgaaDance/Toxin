@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("../componets/toggle-button/toggle-button.css");
 @import url("../componets/checkbox-buttons/checkbox-buttons.css");
+@import url("../componets/date-dropdown/date-dropdown.css");
 html {
     --dark-shade-5: #1F204180;
     --dark-shade-1: #1F2041;
