@@ -12,12 +12,6 @@ module.exports = {
     })
   ],
 
-  entry: './src/pages/main.js', // Основной файл JavaScript
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js', // Имя скомпилированного файла
-  },
-
   module: {
     rules: [
       {

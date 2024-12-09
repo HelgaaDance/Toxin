@@ -1,12 +1,11 @@
 link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap")
-mixin h1(text)
-  h1.widget-title= text
-
-mixin h2(text)
-  h2.item-title= text
-
-mixin h3(text)
-  h3.label= text
+mixin h(level, text)
+  if level === 1
+    h1.widget-title= text
+  else if level === 2
+    h2.item-title= text
+  else if level === 3
+    h3.label= text
 
 mixin body(text)
   body.body-text= text    
