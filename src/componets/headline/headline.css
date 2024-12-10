@@ -1,4 +1,4 @@
-.widget-title {
+.h1__title {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -9,7 +9,7 @@
     color: var(--dark-shade-1);
 }
 
-.item-title {
+.h2__title {
     font-family: "Montserrat", sans-serif;
     font-size: 19px;
     font-weight: 700;
@@ -20,7 +20,7 @@
     color: var(--dark-shade-1);
 }
 
-.label {
+.h3__title {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     line-height: 14.63px;

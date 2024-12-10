@@ -1,7 +1,10 @@
-mixin h(level, text)
+mixin h(level)
   if level === 1
-    h1.widget-title= text
+    h1.h1__title
+      block
   else if level === 2
-    h2.item-title= text
+    h2.h2__title
+      block
   else if level === 3
-    h3.label= text
+    h3.h3__title
+      block
