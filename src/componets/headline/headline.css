@@ -1,4 +1,4 @@
-.h1__title {
+.title__h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -9,7 +9,7 @@
     color: var(--dark-shade-1);
 }
 
-.h2__title {
+.title__h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 19px;
     font-weight: 700;
@@ -20,7 +20,7 @@
     color: var(--dark-shade-1);
 }
 
-.h3__title {
+.title__h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     line-height: 14.63px;
